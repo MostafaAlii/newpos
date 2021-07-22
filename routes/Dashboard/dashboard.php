@@ -27,5 +27,12 @@ Route::group([
         Route::get('/product/edit/{id}', 'ProductController@edit')->name('product.edit');
         Route::post('/product/update/{id}', 'ProductController@update')->name('product.update');
         Route::get('/product/delete/{id}', 'ProductController@destroy')->name('product.delete');
+        // Clients
+        Route::get('/client', 'ClientController@index')->name('client.index');
+        Route::get('/client/create', 'ClientController@create')->name('client.create');
+        Route::post('/client/store', 'ClientController@store')->name('client.store');
+        Route::get('/client/edit/{id}', 'ClientController@edit')->name('client.edit');
+        Route::post('/client/update/{id}', 'ClientController@update')->name('client.update');
+        Route::get('/client/delete/{id}', 'ClientController@destroy')->name('client.delete');
     });
 });

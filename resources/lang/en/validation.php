@@ -146,6 +146,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'phone.0'           =>          'The First Phone Number Is Required',
+    ],
 
 ];
