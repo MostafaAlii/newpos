@@ -150,7 +150,7 @@
                         <ul class="collapse submenu list-unstyled" id="stocks" data-parent="#accordionExample">
                             @if(auth()->user()->hasPermission('clients_read'))
                             <li>
-                                <a href="{{--route('client.index')--}}">{{trans('client.show_all')}}</a>
+                                <a href="{{route('client.index')}}">{{trans('client.show_all')}}</a>
                             </li>
                             @endif
                         </ul>
